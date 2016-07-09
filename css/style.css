@@ -1,0 +1,87 @@
+/*******************
+Page Styling 
+*******************/
+.headerStyle {
+	color:#fff;
+	background-color:#C8102E;
+	padding:10px 15px;
+	font-size: 16px;
+	letter-spacing:0.125em;
+	line-height:21px;
+	text-transform:uppercase;
+}
+
+.siteHeader {
+	margin-top:5px;
+	color:#54585A;
+	text-transform:uppercase;
+}
+
+/****************************
+Feature Story Slider
+****************************/
+.featureSlider {
+	background: #C8102E url(../img/thunderbird_x600.jpg) no-repeat center right;
+	background-size:contain;
+	width:60%;
+	height:400px;
+	position:relative;
+}
+#slider {
+	width:100%;
+	height:400px;
+	position:relative;
+	background-size:contain;
+}
+
+
+/*************************
+Audience gateway links
+*************************/
+
+.gateways {
+    background-color: #FFF9D9;
+    background-color: rgba(255,249,217,1);
+    padding: 10px 0;
+	margin-bottom:20px;
+}
+
+.gateways h2,
+.gateways li {
+    font-size: 16px;
+    line-height: 30px;
+}
+
+.gateways h2 {
+    color: #54585A;
+    float: left;
+    font-weight: bold;
+    letter-spacing: 0.125em;
+    margin: 0 20px 0 0;
+    text-transform: uppercase;
+}
+
+.gateways ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.gateways li {
+    display: inline-block;
+    margin: 0 20px 0 0;
+    padding: 0;
+}
+
+
+/*****************
+Event Calendar 
+*****************/
+
+.calDate {
+	margin-bottom: 5px;
+}
+
+.eventInfo {
+	font-style:italic;
+}
