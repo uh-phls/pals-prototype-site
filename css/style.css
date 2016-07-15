@@ -1,43 +1,168 @@
-/*******************
-Page Styling 
-*******************/
+/**********************
+General Styles
+**********************/
 .headerStyle {
 	color:#fff;
-	background-color:#C8102E;
+	background-color: #C8102E;
+	padding: 10px 15px;
+	font-size: 16px;
+	letter-spacing: 0.125em;
+	line-height: 21px;
+	text-transform: uppercase;
+}
+
+h2 small {
+    display: block;
+    margin: 0;
+    position: relative;
+    top: 4px;
+}
+.bottomBorder {
+	border-bottom: 1px dotted rgba(0,0,0,.2);
+	padding: 10px 0;
+	margin-bottom: 20px;
+	margin-top: 0px;
+}
+.siteHeader {
+	margin-top: 5px;
+	color: #54585A;
+	text-transform: uppercase;
+}
+.titleStyle {
+	color: #fff;
+	background-color: #C8102E;
+	padding: 10px 15px;
+	font-size: 16px;
+	letter-spacing: 0.125em;
+	line-height: 21px;
+	text-transform: uppercase;
+}
+.socialHeader {
+	color:#fff;
 	padding:10px 15px;
 	font-size: 16px;
 	letter-spacing:0.125em;
 	line-height:21px;
 	text-transform:uppercase;
 }
-
-.siteHeader {
-	margin-top:5px;
-	color:#54585A;
-	text-transform:uppercase;
+.socialImage {
+	max-width: 80%;
 }
-
-/****************************
-Feature Story Slider
-****************************/
-.featureSlider {
-	background: #C8102E url(../img/thunderbird_x600.jpg) no-repeat center right;
-	background-size:contain;
-	width:60%;
-	height:400px;
-	position:relative;
+.container-fluid {
+	background-color:#C8102E;
+	border:none;
 }
-#slider {
+.navbar-inverse {
+	background-color:transparent;
+	border-color:transparent;
+}
+.navbar-inverse .navbar-toggle {
+	border-color:#fff;
+}
+.navbar-toggle {
+	background-color:#C8102E;
+}
+.navbar-inverse .navbar-toggle:hover {
+	background-color:#00B388;
+}
+.navbar-inverse .navbar-toggle:focus {
+	background-color:#00B388;
+}
+.facebookIcon {
+	display:inline-block;
+	text-indent:-9999px;
+	width:30px;
+	height:30px;
+	background: url(../icons/facebook_icon-01.svg);
+	background-size:30px 30px;
+}
+.socialTimestamp {
+	font-style:italic;
+}
+.twitterIcon {
+	display:inline-block;
+	text-indent:-9999px;
+	width:30px;
+	height:30px;
+	background: url(../icons/twitter_icon-01.svg);
+	background-size:30px 30px;
+}
+.youTubeIcon {
+	display:inline-block;
+	text-indent:-9999px;
+	width:30px;
+	height:30px;
+	background: url(../icons/youtube_icon-01.svg);
+	background-size:30px 30px;
+}
+.dropdown {
+    margin-bottom: 20px;
+}
+/**********************
+Slideshow
+**********************/
+
+.slide {
+	max-height: 500px;
 	width:100%;
-	height:400px;
-	position:relative;
-	background-size:contain;
 }
-
-
-/*************************
-Audience gateway links
-*************************/
+.slide img {
+	position: relative;
+}
+.slideCopy {
+	position: absolute;
+	z-index: 10;
+	top:50%;
+	transform: translate(0%, -50%);
+}
+.slideCopy h2 {
+	background: #C8102E;
+	padding-top:20px;
+	padding-bottom: 20px;
+	padding-right: 20px;
+	margin-left: -15px;
+	font-family: "League Gothic", sans-serif;
+	font-size: 60px;
+	text-transform: uppercase;
+	letter-spacing: 1.2px;
+	color:#fff;
+	text-align: right;
+	box-shadow: 7px 7px 0px 0px rgba(150,12,34,1);
+}
+.subCopy {
+	color: #fff;
+	letter-spacing: 1.2px;
+	font-size: 20px;
+	font-style: normal;
+}
+.subCopy a {
+	color: #fff;
+	text-decoration: underline;
+}
+.subCopy a:hover {
+	color:#C8102E;
+}
+.slick-dots {
+    bottom: 15px;
+}
+.slick-slider
+{
+    margin-bottom: 0px;
+}
+.slick-dots li button:before
+{
+    font-size: 16px;
+    opacity: .5;
+    color: white;
+}
+.slick-dots li.slick-active button:before
+{
+    opacity: .75;
+    color: #C8102E;
+}
+/**********************
+Audience Gateway Links
+**********************/
 
 .gateways {
     background-color: #FFF9D9;
@@ -73,15 +198,80 @@ Audience gateway links
     padding: 0;
 }
 
-
-/*****************
-Event Calendar 
-*****************/
-
+/**********************
+Event Calendar
+**********************/
 .calDate {
 	margin-bottom: 5px;
 }
-
 .eventInfo {
-	font-style:italic;
+	font-style: italic;
+}
+
+/************************
+Page Header Styles
+************************/
+
+.pageSlideCopy {
+	position: absolute;
+	z-index: 10;
+	bottom:0;
+}
+.pageSlideCopy h2 {
+	background: #C8102E;
+	padding: 20px;
+	margin-left: -15px;
+	margin-right: -30px;
+	margin-bottom: 0;
+	font-family: "League Gothic", sans-serif;
+	font-size: 40px;
+	text-transform: uppercase;
+	letter-spacing: 2.2px;
+	color:#fff;
+	border-top: thick #00866C;
+	border-top-style: solid;
+}
+.pageHeadline {
+	background: #C8102E;
+	color:#fff;
+	border-top: thick #00866C;
+	border-top-style: solid;
+	padding: 15px;
+}
+.pageHeadline h2 {
+	text-transform: uppercase;
+	font-size: 40px;
+	font-family: "League Gothic", sans-serif;
+	letter-spacing: 2.2px;
+	margin: 0;
+}
+
+/************************
+Student Documents
+************************/
+a[href$=".pdf"]:before {
+    content: "";
+    display: inline-block;
+    margin-right: .2em;
+    background: url('https://ssl.uh.edu/images/icons/pdf-icon-small.gif');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 15px;
+    height: 15px;
+}
+
+/************************
+Media Queries
+************************/
+@media only screen and (min-width: 800px) {
+	.socialTitles {
+		color:#fff;
+		padding: 0px;
+		font-size:16px;
+		letter-spacing:0.125em;
+		line-height:21px;
+		text-transform:uppercase;
+		display:none;
+	}
 }
