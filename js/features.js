@@ -6,28 +6,28 @@ var featureStories = [
 		"active": true,
 		"headline": "Headline One Goes Here.",
 		"subhead": "The subhead will go here. Something catchy. Something that will get people to click through and read the rest of the story.",
-		"storyLink":"http://www.google.com",
+		"storyLink":"feature_story.html",
 		"storyImage":"img/student_image.jpg"
 	},
 	{
 		"active": true,
 		"headline": "Headline Number Two.",
 		"subhead": "The subhead will go here. Something catchy. Something that will get people to click through and read the rest of the story.",
-		"storyLink":"http://www.yahoo.com",
+		"storyLink":"http://www.google.com",
 		"storyImage":"img/student_image_2.jpg"
 	},
 	{
 		"active": false,
 		"headline": "Headline, The Third.",
 		"subhead": "The subhead will go here. Something catchy. Something that will get people to click through and read the rest of the story.",
-		"storyLink":"http://www.cnn.com",
+		"storyLink":"http://www.yahoo.com",
 		"storyImage":"img/student_image_3.jpg"
 	},
 	{
 		"active": true,
 		"headline": "The Fourth and Final.",
 		"subhead": "Blah. Blah. Blah. Here are some words and such. This doesn't have to be fancy.",
-		"storyLink":"http://www.amazon.com",
+		"storyLink":"http://www.cnn.com",
 		"storyImage":"img/campus_image.jpg"
 	}
 ];
@@ -62,3 +62,12 @@ for (var i = 0; i < slideshowStories.length; i += 1) {
 }
 
 $(".slideshow").append(slideList);
+
+var storyList = "";
+
+for (var i = 0; i < featureStories.length; i += 1) {
+    var anchorHTML = "<a href='" + featureStories[i].storyLink;
+	anchorHTML += "'><h4>" + featureStories[i].headline + "</h4></a>";
+	storyList += anchorHTML;
+}
+$("#archiveSidebar").append(storyList);

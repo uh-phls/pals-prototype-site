@@ -37,6 +37,16 @@ h2 small {
 	line-height: 21px;
 	text-transform: uppercase;
 }
+.centeredBtn {
+	text-align:center;
+}
+.programBtn {
+	margin-left: 50px;
+    margin-right: 50px;
+}
+.btnSpacing {
+	margin-bottom: 40px;
+}
 .socialHeader {
 	color:#fff;
 	padding:10px 15px;
@@ -197,7 +207,26 @@ Audience Gateway Links
     margin: 0 20px 0 0;
     padding: 0;
 }
+/********************
+Program Side Menu
+********************/
+.sideMenu {
+	background-color: #FFF9D9;
+	margin-top: -10px;
+	margin-bottom: 20px;
+	color: black;
+}
 
+/*********************
+Student Profiles
+**********************/
+.profileImg {
+	max-width: 80%;
+	margin: 0 auto;
+}
+.profileText {
+	margin-top: 0px;
+}
 /**********************
 Event Calendar
 **********************/
@@ -345,6 +374,7 @@ Video Player
 	top:0;
 	left: 0;
 }
+
 .vid-item {
 	display: block;
 	width: 148px;
@@ -355,6 +385,7 @@ Video Player
 }
 
 .thumb {
+	/*position: relative;*/
 	overflow:hidden;
 	height: 84px;
 }
@@ -362,41 +393,57 @@ Video Player
 .thumb img {
 	width: 100%;
 	position: relative;
-	top: -13px;
+	top: -7px;
 }
 
 .vid-item .desc {
-	color: #21A1D2;
+	color: black;
 	font-size: 15px;
 	margin-top:5px;
 }
+
+.vid-item:hover {
+	background: #888B8D;
+	cursor: pointer;
+	color: #fff;
+}
+
 .arrows {
 	position:relative;
 	width: 100%;
 }
 
 .arrow-left {
-	color: #fff;
+	color: #CC181E;
 	position: absolute;
-	background: #777;
+	background: #fff;
 	padding: 15px;
-	left: -25px;
+	left: 0px;
 	top: -130px;
 	z-index: 99;
 	cursor: pointer;
 }
 
 .arrow-right {
-	color: #fff;
+	color: #CC181E;
 	position: absolute;
-	background: #777;
+	background: #fff;
 	padding: 15px;
-	right: -25px;
+	right: 0px;
 	top: -130px;
 	z-index:100;
 	cursor: pointer;
 }
-/************************
+
+.arrow-left:hover {
+	background: #CC181E;
+	color:#fff;
+}
+
+.arrow-right:hover {
+	background: #CC181E;
+	color:#fff;
+}/************************
 Media Queries
 ************************/
 @media only screen and (min-width: 800px) {
