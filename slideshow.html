@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>This is a test</title>
+    <link rel="stylesheet" href="css/normalize.min.css">
+    <link rel="stylesheet" type="text/css" href="https://ssl.uh.edu/css/uh-bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="https://ssl.uh.edu/css/uh-global.css?v=20150820">
+    <style>
+        .slide {
+            max-height: 500px;
+            width: 100%;
+        }
+        .slide img {
+            position: relative;
+        }
+        .slideCopy {
+            position: absolute;
+            z-index: 10;
+            top:50%;
+            transform: translate(0%,-50%);
+        }
+        .slideCopy h2 {
+            background-color: #c8102e;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            padding-right: 20px;
+            margin-left: -15px;
+            font-family: "League Gothic", sans-serif;
+            font-size: 60px;
+            text-transform: uppercase;
+            letter-spacing: 1.2px;
+            color: #fff;
+            text-align: right;
+            box-shadow: 7px 7px 0px 0px rgba(150,12,34,1);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <p>give me some space    .... </p>
+        <div class="slide">
+            <div class="slideCopy col-sm-6">
+                <h2>Headline Will Go Here</h2>
+                <div class="subCopy col-sm-10 col-sm-push-2">
+                    <p>Subhead copy goes here</p>
+                    <a href="#">Learn More</a>
+                </div>
+            </div>
+            <img src="img/student_image.jpg" alt="" />
+        </div>
+        <p>
+            give me some space baby.
+        </p>
+        <div class="slide"></div>
+    </div>
+
+
+
+
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="https://ssl.uh.edu/js/bootstrap.js"></script>
+    <script src="js/events.js"></script>
+    <script src="js/slick/slick.min.js"></script>
+    <script>
+        $('.slideshow').slick({
+            fade: true,
+            autoplay: true,
+            autoplaySpeed: 5000,
+            dots: true
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>This is a test</title>
+    <link rel="stylesheet" href="css/normalize.min.css">
+    <link rel="stylesheet" type="text/css" href="https://ssl.uh.edu/css/uh-bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="https://ssl.uh.edu/css/uh-global.css?v=20150820">
+    <style>
+    .slide {
+        /*background-color: #C8102E;*/
+        height: 500px;
+        width: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .slideCopy {
+        position: relative;
+        top:50%;
+        transform: translateY(-50%);
+        max-width: 47%;
+    }
+    .slideCopy h2 {
+        background-color: #C8102E;
+        padding: 20px;
+        font-family: "League Gothic", sans-serif;
+        font-size: 60px;
+        text-transform: uppercase;
+        letter-spacing: 1.2px;
+        line-height: 60px;
+        color: #fff;
+        text-align: right;
+        box-shadow: 7px 7px 0px 0px rgba(150,12,34,1);
+    }
+    .subCopy {
+        color: #fff;
+        letter-spacing: 1.2px;
+        font-size: 20px;
+        margin-left: 50px;
+        font-style: normal;
+    }
+    .subCopy a {
+        color: #fff;
+        text-decoration: none;
+    }
+    .subCopy a:hover {
+        color:#fff;
+        text-decoration: none;
+    }
+    .subCopy .storyLink {
+        text-decoration: underline;
+    }
+    .subCopy .storyLink:hover {
+        color: #C8102E;
+        text-decoration: underline;
+    }
+    @media (max-width:991px) and (min-width:768px) {
+        .slide {
+            height: 400px;
+            width: 100%;
+        }
+        .slideCopy h2 {
+            padding: 20px;
+            font-size: 40px;
+            letter-spacing: 1.2px;
+            line-height: 40px;
+            box-shadow: 7px 7px 0px 0px rgba(150,12,34,1);
+        }
+        .subCopy {
+            font-size: 18px;
+        }
+    }
+    @media (max-width:767px) and (min-width:600px){
+        .slide {
+            height: 400px;
+            width: 100%;
+        }
+        .slideCopy h2 {
+            padding: 15px;
+            font-size: 30px;
+            line-height: 30px;
+            box-shadow: 7px 7px 0px 0px rgba(150,12,34,1);
+        }
+        .subCopy {
+            letter-spacing: 1.2px;
+            font-size: 16px;
+        }
+    }
+    @media only screen and (max-width:599px) {
+        .slide {
+            background-color: #C8102E;
+            height: 200px;
+            width: 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .slideCopy {
+            position: relative;
+            top:50%;
+            transform: translateY(-50%);
+            max-width: 45%;
+        }
+        .slideCopy h2 {
+            background-color: #C8102E;
+            padding: 25px;
+            font-family: "League Gothic", sans-serif;
+            font-size: 20px;
+            text-transform: uppercase;
+            letter-spacing: 1.2px;
+            line-height: 24px;
+            color: #fff;
+            text-align: right;
+            box-shadow: 7px 7px 0px 0px rgba(150,12,34,1);
+        }
+        .subCopy {
+            display: none;
+        }
+    }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <p>give me some space    .... </p>
+        <div class="slide" style="background-image: url('img/student_image.jpg');">
+            <div class="slideCopy">
+                <a href="http://www.google.com">
+                    <h2>Headline Will Go Here and It'll Be Awesome</h2>
+                </a>
+                    <div class="subCopy">
+                        <p><a href="http://www.google.com">We are a forward-thinking institution committed to developing forward-thinking leaders who will face down the challenges of our modern world.</a></p>
+                        <a href="http://www.google.com" class="storyLink">Learn More</a>
+                    </div>
+
+            </div>
+        </div>
+        <p>Give me some more damn room ... </p>
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+          <!-- Indicators -->
+          <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+            <li data-target="#myCarousel" data-slide-to="3"></li>
+          </ol>
+
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner" role="listbox">
+            <div class="item active slide" style="background-image: url('img/student_image.jpg');">
+                <div class="slideCopy">
+                    <a href="#"><h2>Just an idea</h2></a>
+                    <div class="subCopy">
+                        <p><a href="#">onod ondo fndo fndfo ndof</a></p>
+                        <a href="#" class="storyLink">Learn More</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item " style="background-image: url('img/student_image.jpg');">
+                <div class="slideCopy">
+                    <a href="#"><h2>Just an idea</h2></a>
+                    <div class="subCopy">
+                        <p><a href="#">onod ondo fndo fndfo ndof</a></p>
+                        <a href="#" class="storyLink">Learn More</a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="item " style="background-image: url('img/student_image.jpg');">
+                <div class="slideCopy">
+                    <a href="#"><h2>Just an idea</h2></a>
+                    <div class="subCopy">
+                        <p><a href="#">onod ondo fndo fndfo ndof</a></p>
+                        <a href="#" class="storyLink">Learn More</a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="item " style="background-image: url('img/student_image.jpg');">
+                <div class="slideCopy">
+                    <a href="#"><h2>Just an idea</h2></a>
+                    <div class="subCopy">
+                        <p><a href="#">onod ondo fndo fndfo ndof</a></p>
+                        <a href="#" class="storyLink">Learn More</a>
+                    </div>
+                </div>
+            </div>
+
+          </div>
+
+          <!-- Left and right controls -->
+<!--          <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>-->
+        </div>
+    </div>
+
+
+
+
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="https://ssl.uh.edu/js/bootstrap.js"></script>
+    <script src="js/events.js"></script>
+    <script src="js/slick/slick.min.js"></script>
+    <script>
+        $('.slideshow').slick({
+            fade: true,
+            autoplay: true,
+            autoplaySpeed: 5000,
+            dots: true
+        });
+    </script>
+</body>
+
+</html>
